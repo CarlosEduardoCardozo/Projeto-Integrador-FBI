@@ -5,9 +5,11 @@ import { mapActions, mapState, mapStores } from "pinia";
 import { useSearchStore } from "@/stores/search";
 
 import CardProcurado from "../components/CardProcurado.vue";
+// import CardCardozo from "../components/CardCardozo.vue";
+import CardozoCard from "../components/CardozoCard.vue";
 
 export default {
-  components: { CardProcurado },
+  components: { CardProcurado, CardozoCard },
   data() {
     return {
       data: [],
@@ -45,10 +47,22 @@ export default {
           <card-procurado :key="procurado.uid" :procurado="procurado" />
         </router-link>
       </div>
+      <router-link class="cardozo" to="/InfosCardozo"
+      ><CardozoCard /></router-link
+    >
+      <!-- <CardozoCard class="cardozo"/> -->
     </div>
+    <!-- <CardCardozo /> -->
+
   </div>
 </template>
 <style>
+.cardozo{
+  margin-right: 25px;
+}
+.cardozo a{
+  color: #0a0a12;
+}
 .card {
   padding: 6%;
   margin-left: 4%;

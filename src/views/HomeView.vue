@@ -68,14 +68,17 @@
   .rodapeforget{
     width: 100vw;
     position: relative;
+    margin-top: 353px;
     bottom: 0;
+    
   }
   .rodape{
     bottom: 0;
-    position: fixed;
+    position: relative;
     background-color: #0a0a12;
     width: 100vw;
     margin: 0;
+    
   }
   .logofbi{
     width: 62px;

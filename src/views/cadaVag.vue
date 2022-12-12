@@ -85,11 +85,12 @@ export default {
 }
 @media (max-width: 480px) {
   .infos{
-    position: fixed;
+    position: absolute;
     height: 240px;
     top: 420px;
     width: 80%;
     left: 20px;
+
   }
   .info2{
     position:absolute;
@@ -113,6 +114,11 @@ export default {
     .info2 h2{
       margin-left: 24px;
     }
-
+    .name{
+      font-size: 18px;
+    }
+    .desc{
+      font-size: 13px;
+    }
 }
 </style>
